@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centurion Darts Alliance & Metsweding South Darts Association</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #222; }
+    header { background: #0d1b2a; color: white; text-align: center; }
+    nav { background: #1b263b; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 40px; max-width: 1100px; margin: auto; background: white; margin-top: 20px; border-radius: 8px;
+              box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    h2 { margin-top: 0; color: #0d1b2a; }
+    footer { text-align: center; padding: 20px; background: #0d1b2a; color: white; margin-top: 40px; }
+    .team-card {display:inline-block; width:30%; margin:1%; padding:15px; background:#eef2f5; border-radius:8px; text-align:center;}
+    .team-card img {width:80px; height:80px; object-fit:cover; border-radius:50%;}
+    .gallery-grid {display:grid; grid-template-columns:repeat(3,1fr); gap:10px;}
+    .gallery-grid img {width:100%; border-radius:6px;}
+    details { margin: 15px 0; padding: 10px; background: #e8e8e8; border-radius: 6px; }
+    details summary { font-weight: bold; cursor: pointer; color: #0d1b2a; }
+    .whatsapp-link {background:#25d366; padding:12px 20px; color:white; border-radius:6px; text-decoration:none; font-weight:bold;}
+    .whatsapp-link:hover { background:#128c7e; }
+  </style>
+</head>
+<body>
+
+<header style="padding:20px;">
+  <div style="display:flex; justify-content:center; align-items:center; gap:20px;">
+    <img src="images/cda_logo.png" alt="CDA Logo" style="height:140px;">
+    <img src="images/msda_logo.png" alt="MSDA Logo" style="height:140px;">
+  </div>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#teams">Teams</a>
+  <a href="#fixtures">Fixtures</a>
+  <a href="#results">Results</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+  <a href="#whatsapp">WhatsApp</a>
+  <a href="#previous">Previous Years</a>
+</nav>
+
+<section id="home">
+  <h2>Welcome</h2>
+  <p>Welcome to the official website for the Centurion Darts Alliance (Social) and Metsweding South Darts Association.</p>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>Both groups promote friendly competition, sportsmanship and community growth in darts.</p>
+</section>
+
+<section id="teams">
+  <h2>Teams</h2>
+  <div class="team-card">
+    <img src="images/sample-logo.png">
+    <h3>Team Name</h3>
+    <p>Captain: Name</p>
+    <p>Players: List names here</p>
+  </div>
+</section>
+
+<section id="fixtures">
+  <h2>Fixtures</h2>
+  <p>Weekly fixtures will be displayed here.</p>
+</section>
+
+<section id="results">
+  <h2>Results</h2>
+  <p>Match results will appear here.</p>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="images/gallery/sample1.jpg">
+    <img src="images/gallery/sample2.jpg">
+    <img src="images/gallery/sample3.jpg">
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: example@example.com</p>
+</section>
+
+<section id="whatsapp">
+  <h2>WhatsApp Groups</h2>
+  <p><a class="whatsapp-link" href="#">CDA WhatsApp</a></p>
+  <p><a class="whatsapp-link" href="#">MSDA WhatsApp</a></p>
+</section>
+
+<section id="previous">
+  <h2>Previous Years</h2>
+
+  <button onclick="document.querySelectorAll('#previous details').forEach(d=>d.open=true)">Expand All</button>
+  <button onclick="document.querySelectorAll('#previous details').forEach(d=>d.open=false)">Collapse All</button>
+
+  <details>
+    <summary>▶ 2025 Season</summary>
+    <h3>Fixtures</h3>
+    <p>Add 2025 fixtures here.</p>
+    <h3>Results</h3>
+    <p>Add 2025 results here.</p>
+  </details>
+
+  <details>
+    <summary>▶ 2024 Season</summary>
+    <h3>Fixtures</h3>
+    <table border="1" cellpadding="6" style="width:100%;">
+      <tr><th>Date</th><th>Home</th><th>Away</th><th>Score</th></tr>
+      <tr><td>12 Feb 2024</td><td>Team A</td><td>Team C</td><td>5 - 3</td></tr>
+    </table>
+    <h3>Results</h3>
+    <table border="1" cellpadding="6" style="width:100%;">
+      <tr><th>Team</th><th>Wins</th><th>Losses</th><th>Points</th></tr>
+      <tr><td>Team A</td><td>8</td><td>2</td><td>24</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>▶ 2023 Season</summary>
+    <h3>Fixtures</h3>
+    <table border="1" cellpadding="6" style="width:100%;">
+      <tr><th>Date</th><th>Home</th><th>Away</th><th>Score</th></tr>
+      <tr><td>10 Mar 2023</td><td>Team X</td><td>Team Z</td><td>6 - 2</td></tr>
+    </table>
+    <h3>Results</h3>
+    <table border="1" cellpadding="6" style="width:100%;">
+      <tr><th>Team</th><th>Wins</th><th>Losses</th><th>Points</th></tr>
+      <tr><td>Team X</td><td>9</td><td>1</td><td>27</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>▶ 2022 Season</summary>
+    <h3>Fixtures</h3>
+    <table border="1" cellpadding="6" style="width:100%;">
+      <tr><th>Date</th><th>Home</th><th>Away</th><th>Score</th></tr>
+      <tr><td>05 Apr 2022</td><td>Team Red</td><td>Team Blue</td><td>4 - 4</td></tr>
+    </table>
+    <h3>Results</h3>
+    <table border="1" cellpadding="6" style="width:100%;">
+      <tr><th>Team</th><th>Wins</th><th>Losses</th><th>Points</th></tr>
+      <tr><td>Team Green</td><td>10</td><td>0</td><td>30</td></tr>
+    </table>
+  </details>
+
+</section>
+
+<footer>
+  © 2025 Centurion Darts Alliance & Metsweding South Darts Association
+</footer>
+
+</body>
+</html>
